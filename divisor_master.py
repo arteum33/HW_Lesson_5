@@ -10,10 +10,6 @@ def divisor(n):
 
 
 
-divisor(int(input('Введите любое целое число от 1 до 1000: ')))
-
-
-
 # Задание №2
 # Фукнция выводит список всех делителей числа
 
@@ -23,8 +19,6 @@ def divisors_list(a):
         if (a % i == 0):
             list_1.append(i)
     print(list_1)
-
-divisors_list(int(input('Введите любое целое число от 1 до 1000: ')))
 
 
 
@@ -39,7 +33,6 @@ def divisors_max_value(b):
             list_3 = sorted(list_2,reverse=True)
     print(list_3[0])
 
-divisors_max_value(int(input('Введите любое целое число от 1 до 1000: ')))
 
 
 
