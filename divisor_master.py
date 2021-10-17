@@ -3,10 +3,14 @@
 
 def divisor(n):
     x = len([i for i in range(1,n+1) if not n % i])
+    # print(x)
     if x == 2:
         print('Простое число')
+        return x
     else:
+        # return x
         print('Число не относится к простым числам!')
+        return x
 
 
 
@@ -18,8 +22,9 @@ def divisors_list(a):
     for i in range(1, a + 1):
         if (a % i == 0):
             list_1.append(i)
-    print(list_1)
 
+    print(list_1)
+    return list_1
 
 
 # Задание №3
@@ -31,7 +36,9 @@ def divisors_max_value(b):
         if (b % i == 0):
             list_2.append(i)
             list_3 = sorted(list_2,reverse=True)
+
     print(list_3[0])
+    return list_3[0]
 
 
 
